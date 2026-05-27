@@ -1,6 +1,5 @@
 <?php
 session_start();
-// Cek autentikasi admin
 if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
     header("Location: ../auth/login.php");
     exit();
