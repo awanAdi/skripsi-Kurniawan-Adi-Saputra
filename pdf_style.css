@@ -1,0 +1,422 @@
+@page {
+    size: A4 portrait;
+    margin: 30px 30px 120px 30px;
+}
+
+/* Base */
+body {
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 12px;
+    background: #f9fafb;
+    color: #111827;
+    line-height: 1.35;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #1e40af;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #111827;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #d1d5db;
+    padding-bottom: 4px;
+}
+
+h4 {
+    color: #2563eb;
+    font-size: 13px;
+    margin-top: 16px;
+    background: #eff6ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    page-break-after: avoid;
+}
+
+p {
+    margin: 4px 0;
+}
+
+.label {
+    font-weight: 700;
+    color: #4b5563;
+}
+
+.value {
+    color: #111827;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+th,
+td {
+    border: 1px solid #d1d5db;
+    padding: 6px;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f3f4f6;
+    font-weight: 700;
+    color: #111827;
+}
+
+.pdf-logo {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.pdf-logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.first-header {
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.first-header h1 {
+    margin-bottom: 6px;
+}
+
+.first-header .info {
+    display: none;
+}
+
+.media-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+
+.media-table td {
+    border: none;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.media-left {
+    width: 44%;
+    padding-right: 16px;
+}
+
+.media-right {
+    width: 56%;
+    padding-left: 8px;
+    text-align: right;
+}
+
+.order-info {
+    font-size: 12px;
+    color: #111827;
+    line-height: 1.45;
+}
+
+.order-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.order-info .label {
+    flex: 0 0 110px;
+    font-weight: 700;
+    color: #4b5563;
+}
+
+.order-info .value {
+    flex: 1 1 auto;
+    color: #111827;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.foto-container {
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-align: right;
+    background: transparent;
+}
+
+.foto-container img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 240px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.foto-caption {
+    font-size: 12px;
+    margin-bottom: 6px;
+    text-align: right;
+    color: #111827;
+}
+
+.no-photo .media-left {
+    width: 100%;
+}
+
+.no-photo .media-right {
+    display: none;
+}
+
+.media-table,
+.media-table tr,
+.media-table td {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.nilai-kategori {
+    display: flex;
+    gap: 8px;
+    margin: 4px 0;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.nilai-kategori .label {
+    flex: 0 0 120px;
+    font-weight: 700;
+    color: #4b5563;
+}
+
+.footer {
+    position: fixed;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-top: 1px solid #d1d5db;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 6px;
+    color: #04060a;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+    font-size: 6px;
+    gap: 6px;
+    line-height: 1.1;
+    flex-wrap: nowrap;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4px;
+    font-size: 6px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.footer-left strong {
+    font-size: 6.2px;
+    margin-right: 4px;
+}
+
+.footer-line {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.footer-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
+}
+
+.fl-label {
+    font-size: 9px;
+    gap: 3px;
+    height: 3px;
+    font-weight: 600;
+    color: #4b5563;
+    white-space: nowrap;
+}
+
+.footer-left img.icon,
+.footer-left img,
+.footer img.icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    width: auto;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 8px;
+    text-align: right;
+    white-space: nowrap;
+    transform: translateY(3px);
+}
+
+.footer-right img {
+    height: 9px;
+    vertical-align: middle;
+}
+
+.footer-meta {
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+    font-size: 8px;
+    color: #6b7280;
+}
+
+.footer-left .footer-line {
+    min-width: 0;
+}
+
+.footer-left .footer-item .fl-value {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-col {
+    text-align: center;
+    width: 6%;
+    font-weight: normal;
+}
+
+.pageNumber:before {
+    content: counter(page);
+}
+
+thead {
+    display: table-header-group;
+}
+
+tfoot {
+    display: table-footer-group;
+}
+
+tr {
+    page-break-inside: avoid;
+}
+
+.estimasi-table td.right {
+    text-align: right;
+}
+
+.estimasi-wrapper {
+    page-break-inside: avoid;
+    margin-bottom: 15px;
+}
+
+.estimasi-total {
+    margin-top: 6px;
+    font-weight: 700;
+    text-align: right;
+    border-top: 2px solid #d1d5db;
+    padding-top: 4px;
+}
+
+.force-page-break {
+    page-break-before: always;
+    break-before: page;
+    -webkit-column-break-before: always;
+}
+
+.no-page-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.detail-penilaian {
+    page-break-before: always;
+    break-before: page;
+    -webkit-column-break-before: always;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.muted {
+    color: #e9db9d;
+}
+
+@media print {
+    .pdf-logo img {
+        max-height: 60px;
+    }
+
+    .foto-container {
+        height: 220px;
+    }
+
+    .foto-container img {
+        max-height: 220px;
+    }
+}
